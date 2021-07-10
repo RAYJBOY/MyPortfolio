@@ -1,9 +1,12 @@
-body{
-  margin: 0;
-  padding: 0;
-  background: blue;
+*{
+  box-sizing: border-box;
 }
 
+body{
+  margin: 0;
+  padding: 20px;
+  background: blue;
+}
 
 .row{
   margin: 15vh 0 0 0;
@@ -12,6 +15,7 @@ body{
   align-items: center;
   grid-column-gap: 15px;
   background-color: red;
+  border: dashed;
 }
 
 .column{
@@ -23,6 +27,8 @@ body{
 
 .column img{
   height: 50vh; /*row height depends on this*/
+  display: block;
+  margin-left: auto;
 }
 
 .column h2{
@@ -32,11 +38,35 @@ body{
 
 .intro-grid{
   height: auto;
-  border: dashed;
 }
 
-.about-section{
+/*----------------------------------------------------------------------------*/
+.work-row{
+  margin: 0px -16px;
 }
+
+.work-row,
+.work-row > .work-column{
+  padding: 8px;
+}
+
+.work-column{
+  float: left;
+  width: 25%;
+}
+
+.work-row:after{
+  content: "";
+  display: table;
+  clear:both;
+}
+
+.work-content{
+  background-color: white;
+  padding: 10px;
+}
+
+/*----------------------------------------------------------------------------*/
 
 /*
 .landing-page {
