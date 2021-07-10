@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: blue;
+}
+
+
+.row{
+  margin: 15vh 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 15px;
+  background-color: red;
+}
+
+.column{
+  width: 30%;
+  height: 30%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.column img{
+  height: 50vh; /*row height depends on this*/
+}
+
+.column h2{
+  font-size: 250%;
+  text-align: left;
+}
+
+.intro-grid{
+  height: auto;
+  border: dashed;
+}
+
+.about-section{
+}
+
+/*
+.landing-page {
+  margin: auto;
+  margin-top: 15%;
+  background-color: red;
+  width: 65%;
+  height: 500px;
+  position: relative;
+}
+
+.landing-page img{
+  width: 25%;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.landing-page p{
+  position: absolute;
+  left: 55%;
+  padding-top: 15%;
+  font-size: 2vw;
+}*/
