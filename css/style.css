@@ -4,6 +4,8 @@
 
 body{
   margin: 0;
+  height: 100%;
+  width: 100%;
   padding: 20px;
   background: blue;
 }
@@ -37,6 +39,63 @@ body{
   text-align: left;
   border:dashed;
   width: 30vw;
+}
+/*----------------------------------------------------------------------------*/
+.icons{
+    margin-left: calc(50vw - 170px);
+    border: dashed;
+}
+
+.icons .button{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 10px 5px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.icons .button:hover{
+  width: 200px;
+}
+
+.icons .mail:hover{
+  width: 400px;
+}
+
+.icons .linkedin:hover{
+  width: 130px;
+}
+
+.icons .github:hover{
+  width: 130px;
+}
+
+.icons .button .icon{
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 50px;
+}
+
+.icons .button .icon i{
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.icons .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 50px;
+  margin-left: 10px;
 }
 
 /*----------------------------------------------------------------------------*/
