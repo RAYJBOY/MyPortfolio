@@ -42,7 +42,7 @@ body{
 }
 /*----------------------------------------------------------------------------*/
 .icons{
-    margin-left: calc(50vw - 170px);
+    margin-left: calc(50vw - 160px);
     border: dashed;
 }
 
@@ -112,6 +112,11 @@ body{
 .work-column{
   float: left;
   width: 25%;
+}
+
+.work-row a{
+  text-decoration: none;
+  color: black;
 }
 
 .work-row:after{
