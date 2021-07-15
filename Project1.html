@@ -10,32 +10,33 @@
 
   <body>
 
-    <h1>Project 1</h1>
+    <h1>Remote-controlled buggy</h1>
     <h2>Overview of Project</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>In a team of 3, I successfully built a remote controlled buggy. It consisted of a RF-transmitter, RF-reciever and an H-bridge. After the transmitter sends the data to the reciever, it is sent to the decoder. The decode splits the data into address bits and data bits, which are then used by the H-bridge to steer the buggy. </p>
     <div class="project-image">
-      <img src="images/example.jpg" alt="example image">
-      <img src="images/example.jpg" alt="example image">
+      <img src="images/buggy1.jpeg" alt="buggy image">
+      <img src="images/buggy2.jpeg" alt="buggy image">
+      <video controls>
+        <source src="videos/buggy.mp4" type="video/mp4">
+      </video>
     </div>
 
     <h2>Challenges Faced</h2>
     <ul>
-      <li>hbjhv</li>
-      <li>srssf</li>
-      <li>sffsf</li>
-      <li>dgdg</li>
-      <li>xgggdd</li>
+      <li>Reciever was not recieving any bits - the transmitter had a loose connection with the power supply as we tested the entire circuit on a breadboard initially. Replacing the damaged wire solved the issue. The end product had the circuit soldered onto a PCB. Wires were tested before soldering to ensure the issue did not persist.</li>
+      <li>Reciever power kept fluctuating - this meant the buggy would unexpectedly stop as the reciever did not function as expected. To solve this, I added a regulator to keep the voltage under operating levels along with a few capacitors and diodes to smooth the signal and remove background noise.</li>
+      <li>Soldering - this was new to me at the time. With a little practise, I was able to help my team solder the final circuit onto the PCB before the demo.</li>
+      <li>Time management - At the time, I had quite a lot of deadlines to complete. Additionally, my teammates were not able to contribute much due to the number of courseworks/tests we had. I decided to take responsibilty of the poster as I had completed most of my tasks.</li>
     </ul>
 
     <br>
 
     <h2>Skills Learned</h2>
     <ul>
-      <li>hbjhv</li>
-      <li>srssf</li>
-      <li>sffsf</li>
-      <li>dgdg</li>
-      <li>xgggdd</li>
+      <li>Circuit design/schematics</li>
+      <li>Soldering</li>
+      <li>Time management</li>
+      <li>Teamworking</li>
     </ul>
 
 
