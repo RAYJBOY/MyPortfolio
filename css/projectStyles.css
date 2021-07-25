@@ -18,3 +18,7 @@ body{
   width: 30vw;
   margin: 2% 5%;
 }
+
+.project-image video{
+  width: 30vw;
+}
