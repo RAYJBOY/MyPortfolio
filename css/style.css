@@ -7,7 +7,9 @@ body{
   height: 100%;
   width: 100%;
   padding: 20px;
-  background: blue;
+  /*background: rgb(126,174,255);
+  background: linear-gradient(180deg, rgba(126,174,255,1) 15%, rgba(255,209,124,1) 85%);*/
+  background: #085dcb;
 }
 
 .row{
@@ -16,8 +18,8 @@ body{
   justify-content: center;
   align-items: center;
   grid-column-gap: 15px;
-  background-color: red;
-  border: dashed;
+  /*background-color: red;
+  border: dashed;*/
 }
 
 .column{
@@ -25,25 +27,27 @@ body{
   height: 30%;
   text-align: right;
   vertical-align: middle;
+  margin-bottom: 20px;
 }
 
 .column img{
   height: 50vh; /*row height depends on this*/
   display: block;
   margin-left: auto;
-  border: dashed;
+  border-radius: 2%;
+  /*border: dashed;*/
 }
 
 .column h2{
   font-size: 250%;
   text-align: left;
-  border:dashed;
+  /*border:dashed;*/
   width: 30vw;
 }
 /*----------------------------------------------------------------------------*/
 .icons{
     margin-left: calc(50vw - 160px);
-    border: dashed;
+    /*border: dashed;*/
 }
 
 .icons .button{
@@ -51,7 +55,7 @@ body{
   height: 50px;
   width: 50px;
   float: left;
-  margin: 10px 5px;
+  margin: 10px 5px 0px 5px;
   background: #fff;
   overflow: hidden;
   border-radius: 50px;
@@ -99,6 +103,13 @@ body{
 }
 
 /*----------------------------------------------------------------------------*/
+
+
+.sub-heading{
+  margin-top: 5%;
+}
+
+/*----------------------------------------------------------------------------*/
 .work-row{
   margin: 0px -16px;
   display: table;
@@ -125,7 +136,7 @@ body{
 }
 
 .work-content{
-  background-color: white;
+  background-color: cornsilk;
   padding: 10px;
 }
 
