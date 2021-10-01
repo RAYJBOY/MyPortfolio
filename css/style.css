@@ -27,7 +27,7 @@ body{
   height: 30%;
   text-align: right;
   vertical-align: middle;
-  margin-bottom: 20px;
+  /*margin: 0px 10px 20px 10px;*/
 }
 
 .column img{
@@ -42,7 +42,7 @@ body{
   font-size: 250%;
   text-align: left;
   /*border:dashed;*/
-  width: 30vw;
+  width: 35vw;
 }
 /*----------------------------------------------------------------------------*/
 .icons{
@@ -123,6 +123,12 @@ body{
 .work-column{
   float: left;
   width: 25%;
+  min-width: 225px;
+}
+
+.work-column img{
+  width: auto;
+  height: 30vh;
 }
 
 .work-row a{
