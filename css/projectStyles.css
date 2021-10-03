@@ -1,13 +1,103 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body{
   margin: 0;
   height: 100%;
   width: 100%;
-  padding: 1%;
   background: blue;
+}
+
+.sidebar{
+  list-style: none;
+  position: fixed;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background: #042331;
+  transition: all 0.3s ease;
+}
+
+.sidebar header{
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  user-select: none;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+  border-bottom: 1px solid grey;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover a{
+  padding-left: 50px;
+}
+
+#check{
+  display: none;
+}
+
+label #btn, label #cancel{
+  position: fixed;
+  cursor: pointer;
+  background: #042331;
+  border-radius: 2px;
+  padding: 15px 20px;
+
+}
+
+label #btn{
+  left: 40px;
+  top: 50vh;
+  font-size: 20px;
+  color: white;
+  transition: all 0.3s;
+}
+
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+  left: 220px;
+  width: 40px;
+}
+
+#check:checked ~ .page{
+  margin-left: 300px;
+  transition: 0.3s ease;
 }
 
 .project-image{
@@ -21,4 +111,12 @@ body{
 
 .project-image video{
   width: 30vw;
+}
+
+ul.challenges{
+  list-style-position: inside;
+}
+
+ul.skills{
+  list-style-position: inside;
 }
