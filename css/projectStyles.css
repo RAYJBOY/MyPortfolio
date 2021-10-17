@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -10,8 +11,14 @@ body{
   height: 100%;
   width: 100%;
   background: blue;
+  font-size: 20px;
 }
 
+.page{
+  margin: 0px 10px;
+}
+
+/*--------------------------------sidebar-------------------------------------*/
 .sidebar{
   list-style: none;
   position: fixed;
@@ -38,7 +45,7 @@ body{
   line-height: 65px;
   font-size: 20px;
   color: white;
-  padding-left: 40px;
+  padding-left: 10px;
   box-sizing: border-box;
   border-top: 1px solid white;
   border-bottom: 1px solid grey;
@@ -46,7 +53,7 @@ body{
 }
 
 .sidebar ul li:hover a{
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 #check{
@@ -59,12 +66,11 @@ label #btn, label #cancel{
   background: #042331;
   border-radius: 2px;
   padding: 15px 20px;
-
 }
 
 label #btn{
   left: 40px;
-  top: 50vh;
+  top: calc(50vh - 27.5px);
   font-size: 20px;
   color: white;
   transition: all 0.3s;
@@ -96,9 +102,67 @@ label #cancel{
 }
 
 #check:checked ~ .page{
-  margin-left: 300px;
+  margin-left: 310px;
   transition: 0.3s ease;
 }
+
+#check:empty ~ .page{
+  transition: 0.3s ease;
+}
+
+/*-------------------------------sidebar end----------------------------------*/
+
+
+
+
+
+/*-----------------------------------grid-------------------------------------*/
+
+.grid_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.grid_wrapper > div{
+  border: 2px solid red;
+}
+
+.project-image{
+  grid-row-start: 2;
+}
+
+.overview{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/*---------------------------------End grid-----------------------------------*/
+
+
+
+/*---------------------------------Content------------------------------------*/
+#heading{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 45px;
+}
+
+.subheading{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+
+/*-------------------------------Content End----------------------------------*/
+
+
+
+/*----------------------------------Media-------------------------------------*/
 
 .project-image{
   text-align: center;
@@ -109,9 +173,17 @@ label #cancel{
   margin: 2% 5%;
 }
 
-.project-image video{
+.video{
+  height: 40vh;
   width: 30vw;
+  border: 1px yellow solid;
+  display: block;
+  margin: auto;
 }
+
+/*--------------------------------Media end-----------------------------------*/
+
+/*------------------------------Bullet points---------------------------------*/
 
 ul.challenges{
   list-style-position: inside;
@@ -120,3 +192,5 @@ ul.challenges{
 ul.skills{
   list-style-position: inside;
 }
+
+/*---------------------------Bullet points end--------------------------------*/

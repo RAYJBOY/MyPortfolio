@@ -5,38 +5,70 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Hamza | Flappy Birds Game</title>
     <link rel="stylesheet" href="css/projectStyles.css">
+    <script src="https://kit.fontawesome.com/49b4d38463.js" crossorigin="anonymous"></script>
   </head>
 
 
   <body>
 
-    <h1>Flappy Birds Game</h1>
-    <h2>Overview of Project</h2>
-    <p>Using C++, I successfully managed to make the Flappy Birds game on the K64F development board. The board consisted of an ARM Cortex-M4 core, along with Flash, RAM and other peripherals like an LCD (Nokia 5110), buttons, LEDs etc. The project contained various classes for the bird, the LCD, the obstacles, the menu and the game engine. Additionally, I decided to add my own twist to the game by introducing viruses (small particles in the game that kills the bird).</p>
-    <div class="project-image">
-      <img src="images/FlappyBirdBoard.jpg" alt="System interface">
-      <img src="images/FlappyBirdBoard2.jpg" alt="List of books in the library">
-      <video controls>
-        <source src="videos/FlappyBirdDemo.mp4" type="video/mp4">
-      </video>
+    <input type="checkbox" id="check">
+
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+    <div class="sidebar">
+      <header>My Portfolio</header>
+      <ul>
+        <li><a href="file:///C:/Projects/MyPortfolio/index.html">Home</a></li>
+        <li><a href="file:///C:/Projects/MyPortfolio/Project1.html">Buggy Project</a></li>
+        <li><a href="file:///C:/Projects/MyPortfolio/Project2.html">Library Management System</a></li>
+        <li><a href="file:///C:/Projects/MyPortfolio/Project4.html">The Calculator</a></li>
+      </ul>
     </div>
 
-    <h2>Challenges Faced</h2>
-    <ul>
-      <li>Project looked too complex at start - making the Flappy Bird game would be quite challenging, expecially on an embedded device (limited support for libraries). I began with a simple version of the game where I created the bitmap of the bird and all it did as fly from the left of the screen to the right. This was simple and only included a few classes. After doing the basics, I kept adding complexity to the game until I had a close resemblance to the original game.</li>
-      <li>Debugging - debugging a game developed on an embedded device was not very easy (printing simple lines of text also required relatively long code). For this reason, after adding a feature to the game, it was checked to see if it performed as intended. If not, it was quite simple to identify where the error occurred.</li>
-      <li>Version control - a risk of losing work meant version control would be essential. After every addition of a feature, the code would be pushed onto the repository on the MBed platform.</li>
-    </ul>
 
-    <br>
+    <div class="page">
 
-    <h2>Skills Learned</h2>
-    <ul>
-      <li>C++/embedded programing</li>
-      <li>Version control (Git)</li>
-      <li>Project management</li>
-    </ul>
+      <h1 id="heading">Flappy Birds Game</h1>
 
+      <div class="grid_wrapper">
+
+        <div class="overview">
+          <h2 class="subheading">Overview of Project</h2>
+          <p>Using C++, I successfully managed to make the Flappy Birds game on the K64F development board. The board consisted of an ARM Cortex-M4 core, along with Flash, RAM and other peripherals like an LCD (Nokia 5110), buttons, LEDs etc. The project contained various classes for the bird, the LCD, the obstacles, the menu and the game engine. Additionally, I decided to add my own twist to the game by introducing viruses (small particles in the game that kills the bird).</p>
+        </div>
+
+        <div class="project-image">
+          <img src="images/FlappyBirdBoard.jpg" alt="System interface">
+        </div>
+        <div class="project-image">
+          <img src="images/FlappyBirdBoard2.jpg" alt="List of books in the library">
+        </div>
+      </div>
+
+      <video controls class="video">
+        <source src="videos/FlappyBirdDemo.mp4" type="video/mp4">
+      </video>
+
+      <h2 class="subheading">Challenges Faced</h2>
+      <ul class ="challenges">
+        <li>Project looked too complex at start - making the Flappy Bird game would be quite challenging, expecially on an embedded device (limited support for libraries). I began with a simple version of the game where I created the bitmap of the bird and all it did as fly from the left of the screen to the right. This was simple and only included a few classes. After doing the basics, I kept adding complexity to the game until I had a close resemblance to the original game.</li>
+        <li>Debugging - debugging a game developed on an embedded device was not very easy (printing simple lines of text also required relatively long code). For this reason, after adding a feature to the game, it was checked to see if it performed as intended. If not, it was quite simple to identify where the error occurred.</li>
+        <li>Version control - a risk of losing work meant version control would be essential. After every addition of a feature, the code would be pushed onto the repository on the MBed platform.</li>
+      </ul>
+
+      <br>
+
+      <h2 class="subheading">Skills Learned</h2>
+      <ul class="skills">
+        <li>C++/embedded programing</li>
+        <li>Version control (Git)</li>
+        <li>Project management</li>
+      </ul>
+
+    </div>
 
   </body>
 
