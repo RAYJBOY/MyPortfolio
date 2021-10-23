@@ -10,6 +10,7 @@ body{
   /*background: rgb(126,174,255);
   background: linear-gradient(180deg, rgba(126,174,255,1) 15%, rgba(255,209,124,1) 85%);*/
   background: #085dcb;
+  border: purple 1px solid;
 }
 
 .row{
@@ -18,16 +19,16 @@ body{
   justify-content: center;
   align-items: center;
   grid-column-gap: 15px;
-  /*background-color: red;
-  border: dashed;*/
+  /*background-color: red;*/
+  border: white solid 2px;
 }
 
 .column{
   width: auto;
-  height: 30%;
   text-align: right;
   vertical-align: middle;
   /*margin: 0px 10px 20px 10px;*/
+  border: 2px yellow solid;
 }
 
 .column img{
@@ -39,14 +40,17 @@ body{
 }
 
 .column h2{
+  margin: 0;
+  height: 10vh;
   font-size: 250%;
   text-align: left;
-  /*border:dashed;*/
+  border:dashed 2px black;
   width: 35vw;
 }
 /*----------------------------------------------------------------------------*/
 .icons{
     margin-left: calc(50vw - 160px);
+    margin-bottom: 22vh;
     /*border: dashed;*/
 }
 
@@ -102,6 +106,54 @@ body{
   margin-left: 10px;
 }
 
+/*--------------------------------Scrolldown----------------------------------*/
+
+.scrolldown{
+  border: yellow dashed 2px;
+  text-align: center;
+}
+
+.scrolldown > p{
+  margin: 0;
+  /*border: red 2px solid;*/
+}
+
+.scrolldown > i{
+  /*border: black solid 2px;*/
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+/*----------------------------About_me_container------------------------------*/
+
+.about_me_container{
+  display: flex;
+  margin: 0 -16px;
+  border: 2px white solid;
+  justify-content: center;
+  position: relative;
+}
+
+.about_me_card p{
+  display: block;
+}
+
+.about_me_card{
+  display: flex;
+  margin: 16px;
+  padding: 5px;
+  width: 20vw;
+  height: 15vh;
+  border: black 2px solid;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+}
+
+/*----------------------------------------------------------------------------*/
+
+
 /*----------------------------------------------------------------------------*/
 
 
@@ -113,6 +165,7 @@ body{
 .work-row{
   margin: 0px -16px;
   display: table;
+  border: red solid 1px;
 }
 
 .work-row,
