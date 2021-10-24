@@ -6,7 +6,7 @@ body{
   margin: 0;
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 16px;
   /*background: rgb(126,174,255);
   background: linear-gradient(180deg, rgba(126,174,255,1) 15%, rgba(255,209,124,1) 85%);*/
   background: #085dcb;
@@ -127,28 +127,60 @@ body{
 
 /*----------------------------About_me_container------------------------------*/
 
-.about_me_container{
+.main_container{
+  border: black solid 3px;
   display: flex;
-  margin: 0 -16px;
-  border: 2px white solid;
-  justify-content: center;
-  position: relative;
+  margin: 30px -16px;
 }
 
-.about_me_card p{
-  display: block;
+.about_me_container{
+  position: relative;
+  width: 20vw;
+  height: 20vh;
+  margin: 0 16px;
 }
 
 .about_me_card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+}
+
+.front_card{
   display: flex;
-  margin: 16px;
-  padding: 5px;
-  width: 20vw;
-  height: 15vh;
-  border: black 2px solid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: yellow;
+  color: grey;
   align-items: center;
   justify-content: center;
-  background: grey;
+}
+
+.back_card{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: blue;
+  color: purple;
+  transform: rotateY(180deg);
+  align-items: center;
+  justify-content: center;
+}
+
+.about_me_card:hover{
+  transform: rotateY(180deg);
+}
+
+
+.about_me_card p{
+  border: 2px green solid;
+  margin: 0;
 }
 
 /*----------------------------------------------------------------------------*/
