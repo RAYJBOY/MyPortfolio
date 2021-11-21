@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -7,10 +8,11 @@ body{
   height: 100%;
   width: 100%;
   padding: 16px;
-  /*background: rgb(126,174,255);
-  background: linear-gradient(180deg, rgba(126,174,255,1) 15%, rgba(255,209,124,1) 85%);*/
   background: #085dcb;
-  border: purple 1px solid;
+}
+
+h2{
+  font-size: 200%;
 }
 
 .row{
@@ -19,39 +21,25 @@ body{
   justify-content: center;
   align-items: center;
   grid-column-gap: 15px;
-  /*background-color: red;*/
-  border: white solid 2px;
-}
-
-.column{
-  width: auto;
-  text-align: right;
-  vertical-align: middle;
-  /*margin: 0px 10px 20px 10px;*/
-  border: 2px yellow solid;
 }
 
 .column img{
   height: 50vh; /*row height depends on this*/
-  display: block;
-  margin-left: auto;
   border-radius: 2%;
-  /*border: dashed;*/
 }
 
 .column h2{
   margin: 0;
-  height: 10vh;
-  font-size: 250%;
+  height: auto;
+  font-size: 350%;
   text-align: left;
-  border:dashed 2px black;
-  width: 35vw;
+  width: 400px;
 }
 /*----------------------------------------------------------------------------*/
 .icons{
-    margin-left: calc(50vw - 160px);
-    margin-bottom: 22vh;
-    /*border: dashed;*/
+  margin-top: 20px;
+    margin-left: calc(50vw - 140px);
+    margin-bottom: 23vh;
 }
 
 .icons .button{
@@ -109,26 +97,18 @@ body{
 /*--------------------------------Scrolldown----------------------------------*/
 
 .scrolldown{
-  border: yellow dashed 2px;
   text-align: center;
 }
 
 .scrolldown > p{
   margin: 0;
-  /*border: red 2px solid;*/
 }
-
-.scrolldown > i{
-  /*border: black solid 2px;*/
-}
-
 
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------About_me_container------------------------------*/
 
 .main_container{
-  border: black solid 3px;
   display: flex;
   margin: 30px -16px;
 }
@@ -158,6 +138,10 @@ body{
   color: grey;
   align-items: center;
   justify-content: center;
+  font-size: 200%;
+  color: black;
+  border-radius: 10px;
+
 }
 
 .back_card{
@@ -171,6 +155,9 @@ body{
   transform: rotateY(180deg);
   align-items: center;
   justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
 }
 
 .about_me_card:hover{
@@ -197,7 +184,6 @@ body{
 .work-row{
   margin: 0px -16px;
   display: table;
-  border: red solid 1px;
 }
 
 .work-row,
