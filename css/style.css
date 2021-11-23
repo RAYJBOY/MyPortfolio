@@ -8,11 +8,22 @@ body{
   height: 100%;
   width: 100%;
   padding: 16px;
-  background: #085dcb;
+  background: #e6e2d3;
+}
+
+h1{
+  font-size: 200%;
+  color: #800000;
+}
+
+p{
+  font-size: 120%;
+  font-weight: bold;
 }
 
 h2{
   font-size: 200%;
+  color: #800000;
 }
 
 .row{
@@ -26,9 +37,10 @@ h2{
 .column img{
   height: 50vh; /*row height depends on this*/
   border-radius: 2%;
+  box-shadow: 0px 15px 15px rgba(0,0,0,0.12);
 }
 
-.column h2{
+.column h1{
   margin: 0;
   height: auto;
   font-size: 350%;
@@ -38,8 +50,8 @@ h2{
 /*----------------------------------------------------------------------------*/
 .icons{
   margin-top: 20px;
-    margin-left: calc(50vw - 140px);
-    margin-bottom: 23vh;
+  margin-left: calc(50vw - 140px);
+  margin-bottom: 23vh;
 }
 
 .icons .button{
@@ -57,19 +69,27 @@ h2{
 }
 
 .icons .button:hover{
-  width: 200px;
+  width: 150px;
 }
 
 .icons .mail:hover{
-  width: 400px;
+  width: 420px;
 }
 
-.icons .linkedin:hover{
-  width: 130px;
+.icons .uni:hover{
+  width: 220px;
 }
 
-.icons .github:hover{
-  width: 130px;
+.github{
+  color: black;
+}
+
+.linkedin{
+  color: #2222da;
+}
+
+.uni{
+  color:#ff0000;
 }
 
 .icons .button .icon{
@@ -98,10 +118,7 @@ h2{
 
 .scrolldown{
   text-align: center;
-}
-
-.scrolldown > p{
-  margin: 0;
+  color: #800000;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -134,14 +151,15 @@ h2{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: yellow;
+  background: #ff3a3a;
   color: grey;
   align-items: center;
   justify-content: center;
   font-size: 200%;
   color: black;
+  font-weight: bold;
   border-radius: 10px;
-
+  box-shadow: 0px 15px 15px rgba(0,0,0,0.2);
 }
 
 .back_card{
@@ -158,16 +176,12 @@ h2{
   text-align: center;
   border-radius: 10px;
   color: white;
+  box-shadow: 0px 15px 15px rgba(0,0,0,0.2);
+  padding: 5px;
 }
 
 .about_me_card:hover{
   transform: rotateY(180deg);
-}
-
-
-.about_me_card p{
-  border: 2px green solid;
-  margin: 0;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -195,6 +209,7 @@ h2{
   float: left;
   width: 25%;
   min-width: 225px;
+  height: 60vh;
 }
 
 .work-column img{
@@ -215,6 +230,8 @@ h2{
 .work-content{
   background-color: cornsilk;
   padding: 10px;
+  min-height: 100%;
+  background-image: url("../images/steel-background.jpg")
 }
 
 /*----------------------------------------------------------------------------*/
