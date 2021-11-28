@@ -10,12 +10,32 @@ body{
   margin: 0;
   height: 100%;
   width: 100%;
-  background: blue;
+  background: #e6e2d3;
   font-size: 20px;
+}
+
+h1{
+  font-size: 200%;
+  color: #800000;
+}
+
+p{
+  font-size: 100%;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 200%;
+  color: #800000;
+}
+
+li{
+  font-weight: bold;
 }
 
 .page{
   margin: 0px 10px;
+  margin-bottom: 50px;
 }
 
 /*--------------------------------sidebar-------------------------------------*/
@@ -25,16 +45,18 @@ body{
   left: -300px;
   width: 300px;
   height: 100%;
-  background: #042331;
+  background: #ff3a3a;
   transition: all 0.3s ease;
 }
 
 .sidebar header{
   font-size: 22px;
-  color: white;
-  text-align: center;
+  font-weight: bold;
+  color: #e6e2d3;
+  text-align: left;
+  padding-left: 10px;
   line-height: 70px;
-  background: #063146;
+  background: #800000;
   user-select: none;
 }
 
@@ -63,16 +85,16 @@ body{
 label #btn, label #cancel{
   position: fixed;
   cursor: pointer;
-  background: #042331;
   border-radius: 2px;
   padding: 15px 20px;
+  background: #ff3a3a;
 }
 
 label #btn{
   left: 40px;
   top: calc(50vh - 27.5px);
   font-size: 20px;
-  color: white;
+  color: #e6e2d3;
   transition: all 0.3s;
 }
 
@@ -81,7 +103,7 @@ label #cancel{
   left: -195px;
   top: 17px;
   font-size: 30px;
-  color: #0a5275;
+  color: #e6e2d3;
   padding: 5px 10px;
   transition: all 0.3s ease;
 }
@@ -125,10 +147,6 @@ label #cancel{
   margin-bottom: 10px;
   margin-top: 10px;
   align-items: center;
-}
-
-.grid_wrapper > div{
-  border: 2px solid red;
 }
 
 .project-image{
@@ -176,7 +194,6 @@ label #cancel{
 .video{
   height: 40vh;
   width: 30vw;
-  border: 1px yellow solid;
   display: block;
   margin: auto;
 }
